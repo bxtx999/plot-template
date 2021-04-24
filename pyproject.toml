@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "plot"
+version = "0.1.0"
+description = "plot for results"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.20.2"
+scipy = "^1.6.2"
+matplotlib = "^3.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true  # 设置清华镜像为默认回调, 以避免 poetry 在某些缺省操作里又回调到 pypi
